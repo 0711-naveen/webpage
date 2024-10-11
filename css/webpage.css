@@ -1,0 +1,485 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100%;
+    position: relative;
+}
+.socialmedia{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    gap: 10px;
+}
+.socialmedia img{
+    border-radius: 15px;
+}
+.container{
+    width: 100%;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+   
+}
+.container .nav{
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    color: whitesmoke;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: none;
+    position: sticky;
+    top:0;
+    z-index: 1;
+}
+.container .nav .title{
+    font-size: x-large;
+    text-indent: 20px;
+    letter-spacing: 1vh;
+}
+.container .nav .title span{
+    color: rgb(255, 68, 0);
+}
+.container .nav .menus{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.container .nav .menus a{
+    text-decoration: none;
+    color: white;
+    transition: all 0.5s;
+}
+.container .nav .menus a:hover{
+    background-color: orangered;
+    color: white;
+    padding: 7px 20px 7px 20px;
+    border-radius: 10px;
+}
+.container .menu_btn{
+    height: 30px;
+    width: 25px;
+    background-color: white;
+    text-align: center;
+    display: none;
+}
+
+.container .details{
+    
+    width: 100%;
+    
+}
+
+.container .introduction1{
+    
+    background-color: bisque;
+    display: flex;
+    justify-content: space-between;
+    padding:40px;
+    
+}
+.container .introduction1 h1{
+    height: 110px;
+    margin-bottom: 30px;
+    padding-top: 10px;
+    font-size:50px;
+}
+.container .introduction1 h3{
+    margin-bottom: 30px;
+    opacity: 0.7;
+}
+.container .introduction1 .intro .trail{
+    border:none;
+    outline: none;
+    font-size: larger;
+    padding: 4px;
+    border-radius: 7px;
+    background-color: rgb(255, 62, 62);
+    margin-top: 30px;
+    
+}
+.container .introduction1 img{
+    height:280px ;
+    width:250px ;
+}
+
+.container .introduction2{
+  
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 80px;
+    padding:40px;
+}
+.container .introduction2 .description{
+   padding-left: 20px;
+}
+.container .introduction2 .description h3{
+    opacity:0.8;
+    margin-top: 30px;
+}
+
+.container .services{
+    width: 100%;
+    background-color:white;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+   }
+   .container .services h1{
+    text-decoration: underline;
+}
+.container .services .types{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: -250px;
+    
+}
+.container .services .service_type{
+    height: 100px;
+    width: 150px;
+    background-color: white;
+    border-radius: 15px;
+    text-align: center;
+    place-content: center;
+    transition: all 0.5s;
+    
+}
+.container .services .service_type #btn{
+    background-color: black;
+    color: white;
+    padding: 7px 20px 7px 20px;
+    border: none;
+    border-radius: 8px;
+}
+.container .services .service_type:hover{
+    height: 110px;
+    width: 160px;
+    background-color: aquamarine;
+    color: black;
+    border-radius: 15px;
+    text-align: center;
+    place-content: center;
+}
+.container .services .service_type #btn:hover{
+    background-color: white;
+    color: black;
+    padding: 7px 20px 7px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.container .details .blogs{
+    width: 100%;
+    padding:40px;
+    margin-bottom: 50px;
+    
+}
+.container .details .blogs p{
+    opacity: 0.8;
+}
+.container .details .blogs .trademark{
+    height: 100px;
+    width: 50%;
+    background-color: white;
+    border: 1px solid orangered;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+    overflow:hidden;
+    padding: 10px;
+    transition: all 0.5s;
+    
+}
+.container .details .blogs .trademark:hover{
+    width: 60%;
+    box-shadow: 6px 4px 10px 2px rgb(255, 163, 51);
+    cursor: pointer;
+    overflow: auto;  
+    
+}
+.container .details .blogs .patent{
+    float:right;
+    height: 100px;
+    width: 50%;
+    background-color: white;
+    border: 1px solid orangered;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+    overflow: hidden;
+    padding: 10px;
+    transition: all 0.5s;
+
+}
+.container .details .blogs .patent:hover{
+   
+    width: 60%;
+    cursor: pointer;
+    box-shadow: 6px 4px 10px 2px rgb(255, 163, 51);
+    overflow: auto;  
+    
+}
+.container .details .blogs .copyrights{
+    clear:right;
+    float:left;
+    height: 100px;
+    width: 50%;
+    background-color: white;
+    border: 1px solid orangered;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+    overflow:hidden;
+    padding: 10px;
+    transition: all 0.5s;
+
+}
+.container .details .blogs .copyrights:hover{
+    width: 60%;
+    box-shadow: 6px 4px 10px 2px rgb(255, 163, 51);
+    cursor: pointer;
+    overflow: auto;  
+}
+.container .details .blogs .design{
+    clear:left;
+    float:right;
+    height: 100px;
+    width: 50%;
+    background-color: white;
+    border: 1px solid orangered;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+    overflow: hidden;
+    padding: 10px;
+    transition: all 0.5s;
+
+}
+.container .details .blogs .design:hover{
+    width: 60%;
+    box-shadow: 6px 4px 10px 2px rgb(255, 163, 51);
+    cursor: pointer; 
+    overflow: auto;  
+}
+.about_us{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    gap:10px;
+}
+.about_us p{
+    text-indent: 50px;
+    padding: 15px;
+}
+.about_us h1{
+    text-decoration: underline;
+}
+
+.container .details .address{
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: black;
+}
+.container .details .address h2{
+    color: orangered;
+    padding: 20px;
+    margin-left:-20px;
+}
+.container .details .address .googlemap{
+    align-items: center;
+    margin-left: -80px;
+}
+.container .details .address .googlemap iframe{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+
+}
+.container .details .address .googlemap #map{
+    margin-left: -20px;
+}
+
+@media only screen and (min-width:300px) and (max-width:780px){
+    .socialmedia img{
+        border-radius: 15px;
+        height: 25px;
+        width: 25px;
+    }
+
+    .container .nav .menus{
+        display: none;
+    }
+    .container .nav .menus{
+        width: 120px;
+        gap: 5px;
+        position: absolute;
+        right: 0;
+        top:40px;
+        background-color:none;
+        flex-direction: column;
+        align-items: center;
+       
+    }
+    .container .nav .menus a{
+        width: 120px;
+        background-color: orangered;
+        border: 2px solid white;
+        padding: 7px 20px 7px 20px;
+        border-radius: 10px;
+        text-align: center;
+
+    }
+    .container .nav .menus a:hover{
+            text-align: left;
+            color: white;
+            padding: 7px;    
+    }
+    .container .menu_btn{
+        display: flex;
+        justify-content: center;
+        color: black;
+        align-items: center;
+        background-color: white;
+    }
+    
+    .container .details{
+        display: flex;
+        flex-direction: column;
+    }
+    .introduction1{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .container .introduction1 h1{
+        font-size: 30px;
+        margin-bottom:0px;
+    }
+    .container .introduction1 img{
+        width: 130px;
+        height: 140px;
+    }
+    .introduction2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 10px;
+        width: 100%;
+    }
+    .container .introduction2 h1{
+        font-size: 30px;
+        margin-bottom:0px;
+    }
+    .introduction2 .description{
+        width: 100%;
+        padding-left: 0px;
+    }
+    .introduction2 img{
+        height: 200px;
+        width: 300px;
+    }
+    .services{
+        flex-direction: column;
+        gap: 10px;
+        font-size: small;
+    }
+    .container .services .service_type{
+        height: 40px;
+        width: 80px;
+        
+    }
+    .container .services .service_type:hover{
+        height: 80px;
+        width: 100px;
+    }
+    .container .details .blogs{
+        font-size: small;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .container .details .blogs .trademark{
+        width:75%;
+        height: 50px;
+    }
+    .container .details .blogs .trademark:hover{
+        width: 90%;
+        overflow: auto;
+        
+    }
+    .container .details .blogs .patent{
+        width:75%;
+        height: 50px;
+        clear:left;
+    }
+    .container .details .blogs .patent:hover{
+        width: 90%;
+        overflow: auto;
+    }
+    .container .details .blogs .copyrights{
+        width:75%;
+        height: 50px;
+    }
+    .container .details .blogs .copyrights:hover{
+        width: 90%;
+        overflow: auto;
+    }
+    .container .details .blogs .design{
+        width:75%;
+        height: 50px;
+    }
+    .container .details .blogs .design:hover{
+        width: 90%;
+        overflow: auto;
+    }
+    .about_us{
+        width: 100%;
+        font-size: small;
+        padding: 0px;
+        margin-top:-40px;
+    }
+    .address{
+        
+        font-size: small;
+       justify-content:none;
+    }
+    .container .details .address .googlemap iframe{
+        height: 70px;
+        width: 70px;
+        
+    }
+    
+
+}
+@media only screen and (min-width:300px) and (max-width:600px){
+    
+    .address{
+        
+        padding-left: 30px;
+        font-size: small;
+       justify-content:none;
+       flex-direction: column;
+       align-items: center;
+    } 
+    .container .introduction1 h1{
+        
+        margin-bottom:15px;
+    }
+}

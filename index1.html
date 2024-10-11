@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/ccbe966bd7.js" crossorigin="anonymous"></script>
+
+    <link rel="styleSheet" href="./css/webpage.css" type="text/css"/>
+    <script>
+        function openMenu(){
+            if(document.getElementById("menu").style.display==="none"){
+                document.getElementById("menu").style.display="flex"
+            }
+            else{
+                document.getElementById("menu").style.display="none"
+            }
+          
+        }
+    </script>
+</head>
+<body>
+    <div class="socialmedia">
+        
+        <a class="SMpic" href="https://www.whatsapp.com/"  target="blank">
+            <img  src="./image/whatsapp.png" height="40px"width="40px" alt="whatsapp"/>
+        </a>
+        <a  class="SMpic" href=""   target="blank">
+            <img  src="./image/facebook.png" height="40px"width="40px" alt="facebook"/>
+        </a>
+        <a  class="SMpic" href=""   target="blank">
+            <img  src="./image/instagram.jpeg" height="40px"width="40px" alt="instagram"/>
+        </a>
+    </div>
+    <div class="container">
+        
+        <div class="nav">
+            <div class="title">C<span>N</span>C</div>
+            <div id="menu" class="menus">
+                <a href="#det">Home</a>
+                <a href="#ser">Services</a>
+                <a href="#abt_us">About us</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <button onclick="openMenu()" class="menu_btn"><i class="fa-solid fa-bars"></i></buttono>
+        </div>
+        <div class="details" id="det">
+            <div class="introduction1">
+                <div class="intro">
+                    <h1>Producting the heart and soul of your bussiness</h1>
+                    <h3>Simple fast & affordable Intellectual Property Services</h3>
+                    <botton class="trail">Start free trail</botton>
+                </div>
+                <img  src="./image/ice-cream.svg"  alt="img"/>
+            </div>
+            <div class="introduction2">
+                <img src="./image/world.webp" width="450px" height="300px" alt="img"/>
+                <div class="description">
+                    <h1>Trademark protection wherever you need it</h1>
+                    <h3>Worldwide coverage is only one of the advantages offered by trademark one-stop-shop <b>CNC</b>. 
+                        Regardless of where you come from, our team of trademark attorneys is ready to represent you across the globe,
+                         providing seamless experience and effective end-to-end brand protection.</h3>
+                </div>
+            </div>
+            <div class="services" id="ser">
+                <h1>SERVICES</h1>
+                <div class="types">
+                    <div class="service_type">
+                        <h3>Trademark</h3><br>
+                        <botton id="btn">Apply</botton>
+                    </div>
+                    <div class="service_type">
+                        <h3>Patent</h3><br>
+                        <botton id="btn">Apply</botton>
+                    </div>
+                    <div class="service_type">
+                        <h3>Copyrights</h3><br>
+                        <botton id="btn">Apply</botton>
+                    </div>
+                    <div class="service_type">
+                        <h3>Design</h3><br>
+                        <botton id="btn">Apply</botton>
+                    </div>
+                </div>    
+            </div>
+            <div class="blogs">
+                <div class="trademark">
+                    <h3>Trademark</h3>
+                    <p>A trademark is a word, phrase, symbol, design, or combination of these that identifies a business's goods or services and distinguishes them from competitors' offerings.
+                         Trademarks are often used as brand names and can be among a business's most valuable assets.</p>
+                </div>
+                <div class="patent">
+                    <h3>Patent</h3>
+                    <p>A patent is a legal document that gives the inventor exclusive rights to an invention for a set period of time.
+                         It protects the inventor's rights to their invention by preventing others from making, using, selling, or importing it without the inventor's permission.</p>
+                </div>
+                <div class="copyrights">
+                    <h3>Copyrights</h3>
+                    <p>Copyright is a form of intellectual property that protects original works of authorship. It gives the owner exclusive rights to use their work, including the right to copy and communicate it to the public. 
+                        Copyright protects the expression of an idea or information, not the idea or information itself.</p>
+                </div>
+                <div class="design">
+                    <h3>Design</h3>
+                    <p>Design is a broad concept that involves the process of creating new things, such as objects, systems, or interactions. It can also refer to the concept or proposal for something that has been created.</p>
+                </div>
+            </div>
+            <div class="about_us" id="abt_us">
+                <h1>WHAT WE DO?</h1>
+                <P>At <strong>CNC</strong>, we specialize in global intellectual property services, including trademark and patent registration. Our expert team navigates the complexities of IP law to provide tailored solutions that protect your unique ideas and brands.
+                     We conduct thorough research and offer strategic advice to maximize your IP portfolio. Whether you're a startup or a multinational corporation, we are dedicated to safeguarding your innovations. Trust us to help you secure a competitive edge in the market.
+                </P>
+            </div>
+            <div class="address">
+                <div class="location">
+                    <h2>Address</h2>
+                    <p>VRS Building,</p><p>Valliammai street,</p><p>Medavakkam,Chennai-600100</p>
+                </div>
+                <div class="contact_us" id="contact">
+                    <h2>Contact</h2>
+                    <p>naveenveera0711@gmail.com</p>
+                    <p>Mo - Fr: 9am - 5pm</p>
+                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                </div>
+                <div class="googlemap" >
+                    <h2 id="map">Location</h2>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1352.2244629565712!2d80.1798132432085!3d12.914419978277634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525ea3857ed451%3A0x9d96071ab448d364!2sVRS%20Building%2C%20Valliammai%20Street%2C%20Vijayanagaram%2C%20Santhosapuram%2C%20Medavakkam%2C%20Chennai%2C%20Tamil%20Nadu%20600100!5e0!3m2!1sen!2sin!4v1727807271586!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
